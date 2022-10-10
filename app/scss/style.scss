@@ -3,31 +3,19 @@
 @import 'jquery.fancybox.scss';
 @import 'normalize.scss';
 @import 'myreset.scss';
+@import 'global.scss';
 
-// ---- ---- fonts ---- ---- //
-@font-face {
-}
+// ---- ---- font ---- ---- //
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap');
 
 // ---- ---- colors ---- ---- //
-$color_main: #ffffff;
-$color_accent: #0093a1;
-$color_light: #ffffff;
-$color_dark: #262c27;
-$color_hover: #b9c400;
-$color_text: #262c27;
 
-// ---- ---- main ---- ---- //
-body {
-}
-.suptitle {
-  &__left {
-  }
-}
 // ---- ---- header ---- ---- //
 .header {
   &__slider {
   }
   &__slider-item {
+    position: relative;
     min-height: 100vh;
     background-image: url(../images/bg/bg_head01.jpg);
     background-size: cover;
@@ -39,14 +27,30 @@ body {
   &__item {
   }
   &__info {
+    position: absolute;
+    right: 80px;
+    bottom: 115px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $color_light;
   }
   &__info-suptitle {
+    margin-bottom: 5px;
   }
   &__info-title {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 86px;
+    margin-bottom: 48px;
   }
   &__info-suptext {
+    margin-bottom: 8px;
   }
   &__info-text {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-bottom: 20px;
   }
   &__info-link {
   }
