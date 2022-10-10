@@ -12,6 +12,8 @@
 
 // ---- ---- header ---- ---- //
 .header {
+  position: relative;
+
   &__slider {
   }
   &__slider-item {
@@ -53,6 +55,18 @@
     margin-bottom: 20px;
   }
   &__info-link {
+  }
+}
+.slick-arrow {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 10;
+  &__left {
+    right: 125px;
+  }
+  &__right {
   }
 }
 
