@@ -1,7 +1,10 @@
 @import 'color.scss';
 body {
   font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 19px;
+  background-color: $color_dark;
 }
 .suptitle {
   &__left {
