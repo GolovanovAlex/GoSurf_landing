@@ -31,19 +31,21 @@ body {
   }
 }
 .title {
-  font-size: 80px;
   font-weight: 800;
-  line-height: 78px;
   text-transform: uppercase;
   span {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
     font-size: 200px;
     line-height: 156px;
-    opacity: 0.02;
+    color: rgba(#ffffff, 0.02);
+    h3 {
+      position: absolute;
+      top: 0;
+      right: -10px;
+    }
   }
   &__h3 {
-    position: relative;
+    font-size: 80px;
+    color: $color_light;
   }
 }
