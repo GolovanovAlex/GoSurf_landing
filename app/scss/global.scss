@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   line-height: 19px;
   background-color: $color_dark;
+  color: $color_light;
 }
 .suptitle {
   &__left {
@@ -16,7 +17,6 @@ body {
     letter-spacing: 7.33px;
     text-transform: uppercase;
     opacity: 0.5;
-    color: $color_light;
     padding: 0 0 0 103px;
     &::before {
       content: '';
@@ -28,5 +28,22 @@ body {
       background-color: $color_light;
       opacity: 0.5;
     }
+  }
+}
+.title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 78px;
+  text-transform: uppercase;
+  span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 200px;
+    line-height: 156px;
+    opacity: 0.02;
+  }
+  &__h3 {
+    position: relative;
   }
 }
