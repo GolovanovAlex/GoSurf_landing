@@ -85,5 +85,8 @@ $(function () {
 
     $('.summ').html(summ);
   });
-  $('.summ').html(summ);
+
+  $('.product__circle').on('click', function () {
+    $(this).toggleClass('act');
+  });
 });
