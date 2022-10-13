@@ -544,6 +544,11 @@
   }
 }
 .shop {
+  background-image: url(../images/bg/bg_shop.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-bottom: 250px;
   &__title {
     transform: translateX(-25px);
   }
@@ -553,13 +558,24 @@
   }
   &__box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
   &__info {
-    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+    margin-left: 132px;
+  }
+  &__descr {
+    margin-bottom: 45px;
   }
   &__price {
+    margin-bottom: 65px;
+    img {
+      display: flex;
+      margin-left: -15px;
+    }
     font-size: 32px;
     font-weight: 800;
     line-height: 40px;
@@ -570,25 +586,42 @@
       padding-left: 5px;
     }
   }
+  &__btn {
+    justify-content: flex-start;
+  }
   &__content {
   }
   &__product {
   }
   &__extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-transform: uppercase;
+    margin-right: 85px;
+    margin-left: 100px;
   }
   &__extra-title {
     font-size: 28px;
     font-weight: 800;
     line-height: 40px;
+    margin-bottom: 25px;
   }
   &__extra-box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
+    gap: 50px;
   }
   &__extra-item {
+  }
+  &__extra-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    margin-bottom: 30px;
   }
   &__extra-name {
     font-size: 18px;
