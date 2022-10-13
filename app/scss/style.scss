@@ -410,12 +410,13 @@
     }
   }
 }
-
-.holder {
+.travel {
   background-image: url(../images/bg/bg_travel.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right 108%;
+}
+.holder {
   &__title {
     transform: translateX(-122px);
   }
@@ -487,6 +488,9 @@
     font-weight: 800;
     line-height: 36px;
     padding-left: 30px;
+    .summ {
+      color: $color_accent;
+    }
   }
   &__info-desc {
     display: flex;
@@ -510,6 +514,10 @@
 }
 
 .sleep {
+  background-image: url(../images/bg/bg_sleep.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
   &__title {
     transform: translateX(-50px);
   }

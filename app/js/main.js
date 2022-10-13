@@ -78,4 +78,12 @@ $(function () {
       spinner.find('input').trigger('change');
     });
   });
+  $('.quantity-button').on('click', function () {
+    let nights = $('.nights').val() * $('.summ').data('nights');
+    let guests = ($('.guests').val() - 1) * $('.summ').data('guests');
+    let summ = nights + guests;
+
+    $('.summ').html(summ);
+  });
+  $('.summ').html(summ);
 });
