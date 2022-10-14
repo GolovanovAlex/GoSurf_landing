@@ -650,6 +650,7 @@
     border-radius: 50%;
     background-color: $color_light;
     cursor: pointer;
+
     &.act {
       .product__circle-row--two {
         width: 12px;
@@ -671,13 +672,35 @@
     }
   }
   &__content {
+    display: none;
     position: absolute;
-    width: 200px;
-    display: block;
+    top: -13px;
+    left: 125px;
+    width: 255px;
     font-size: 24px;
     font-weight: 800;
     line-height: 24px;
     text-transform: uppercase;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -90px;
+      top: 50%;
+      width: 80px;
+      height: 1px;
+      background-color: $color_light;
+      opacity: 0.5;
+    }
+  }
+  &__content--left {
+    top: -13px;
+    left: auto;
+    right: 125px;
+    &::before {
+      top: 50%;
+      left: auto;
+      right: -90px;
+    }
   }
   &__box--one {
     top: 200px;
