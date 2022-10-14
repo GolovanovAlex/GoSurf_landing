@@ -1,4 +1,5 @@
 $(function () {
+  // ---- ---- header-slider ---- ---- //
   $('.header__slider').slick({
     asNavFor: '.slider-dots',
     infinite: true,
@@ -16,6 +17,7 @@ $(function () {
     arrows: false,
   });
 
+  // ---- ---- surf-slider ---- ---- //
   $('.surf-slider').slick({
     asNavFor: '.surf-slider-map',
     slidesToShow: 5,
@@ -35,6 +37,8 @@ $(function () {
     arrows: false,
     focusOnSelect: true,
   });
+
+  // ---- ---- travel-slider ---- ---- //
   $('.holder__slider').slick({
     infinite: true,
     fade: true,
@@ -43,6 +47,8 @@ $(function () {
     nextArrow:
       '<img class="slick-arrow slick-arrow__right" src="images/icon/arrow_right.svg" alt="arrow"/img>',
   });
+
+  // ---- ---- shop-slider ---- ---- //
   $('.shop-slider').slick({
     infinite: true,
     fade: true,
@@ -52,7 +58,7 @@ $(function () {
       '<img class="slick-arrow slick-arrow__right" src="images/icon/arrow_right.svg" alt="arrow"/img>',
   });
 
-  //input number style//
+  // ---- ---- input number ---- ---- //
   $(
     '<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>'
   ).insertAfter('.quantity input');
@@ -86,6 +92,8 @@ $(function () {
       spinner.find('input').trigger('change');
     });
   });
+
+  // ---- ---- input summ ---- ---- //
   $('.quantity-button').on('click', function () {
     let nights = $('.nights').val() * $('.summ').data('nights');
     let guests = ($('.guests').val() - 1) * $('.summ').data('guests');
@@ -94,7 +102,13 @@ $(function () {
     $('.summ').html(summ);
   });
 
+  // ---- ---- click shop ---- ---- //
   $('.product__circle').on('click', function () {
     $(this).toggleClass('act');
+  });
+
+  // ---- ---- click menu ---- ---- //
+  $('.menu-btn').on('click', function () {
+    $('.menu, .menu-btn').toggleClass('active');
   });
 });
