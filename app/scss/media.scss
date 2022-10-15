@@ -834,7 +834,6 @@
       margin-top: 30px;
     }
   }
-
   .sleep {
     background-position: right 75%;
     .holder-slider__descr {
@@ -848,5 +847,13 @@
         margin: 0 0 0 -15px;
       }
     }
+  }
+  .quantity-button.quantity-up {
+    top: 28px;
+    left: 190px;
+  }
+  .quantity-button.quantity-down {
+    top: 26px;
+    left: 160px;
   }
 }
