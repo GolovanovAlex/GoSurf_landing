@@ -200,6 +200,15 @@
     right: auto;
     left: 220px;
   }
+  .shop-slider {
+    &__info {
+      margin-left: 30px;
+    }
+    &__extra {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
 }
 @media (max-width: 1000px) {
   .menu-btn {
@@ -389,6 +398,9 @@
   .holder-slider__info-title {
     font-size: 32px;
     line-height: 32px;
+  }
+  .shop {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 900px) {
