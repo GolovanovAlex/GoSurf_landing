@@ -20,14 +20,21 @@ $(function () {
   // ---- ---- surf-slider ---- ---- //
   $('.surf-slider').slick({
     asNavFor: '.surf-slider-map',
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
       '<img class="slick-arrow slick-arrow__left" src="images/icon/arrow_left.svg" alt="arrow"/img>',
     nextArrow:
       '<img class="slick-arrow slick-arrow__right" src="images/icon/arrow_right.svg" alt="arrow"/img>',
-    centerMode: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1151,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
   $('.surf-slider-map').slick({
     infinite: false,

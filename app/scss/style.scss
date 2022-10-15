@@ -70,7 +70,6 @@
 }
 
 // ---- ---- header ---- ---- //
-
 .header {
   position: relative;
   &__aside {
@@ -318,6 +317,7 @@
   margin: 0 auto;
   .slick-list {
     min-height: 635px;
+    overflow: visible;
   }
   .slick-current {
     .surf-slider-dots__content {
