@@ -414,6 +414,16 @@
   .travel {
     padding-top: 50px;
   }
+  .sleep {
+    background-position: right 82%;
+    .holder-slider__descr {
+      background-image: none !important;
+      .descr {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
 }
 @media (max-width: 800px) {
   .slider-dots {
@@ -586,6 +596,13 @@
       background-size: 80%;
     }
   }
+  .sleep {
+    .title {
+      h3 {
+        left: 70%;
+      }
+    }
+  }
 }
 @media (max-width: 500px) {
   .menu-btn {
@@ -647,6 +664,10 @@
       max-width: 300px;
     }
   }
+  .holder-slider__descr {
+    padding-top: 50px;
+    margin: -250px 0 0 30px;
+  }
 }
 @media (max-width: 450px) {
   .subtitle {
@@ -700,13 +721,6 @@
   .travel {
     .descr__text {
       margin-top: -13px;
-    }
-  }
-  .sleep {
-    .title {
-      h3 {
-        left: 70%;
-      }
     }
   }
 }
@@ -773,6 +787,7 @@
     margin: 0 0 5px 0;
   }
   .travel {
+    padding-bottom: 10px;
     background-size: 80%;
     background-position: right 83%;
   }
@@ -819,6 +834,19 @@
       margin-top: 30px;
     }
   }
+
   .sleep {
+    background-position: right 75%;
+    .holder-slider__descr {
+      margin: 0 0 0 20px;
+      .descr {
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+      img {
+        display: flex;
+        margin: 0 0 0 -15px;
+      }
+    }
   }
 }
