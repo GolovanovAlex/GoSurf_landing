@@ -651,6 +651,21 @@
       line-height: 30px;
     }
   }
+  .title {
+    span {
+      font-size: 90px;
+      transform: translateX(-30px);
+    }
+    h3 {
+      top: -30px;
+      left: 55%;
+      font-size: 55px;
+      &::after {
+        left: 0;
+        width: 50px;
+      }
+    }
+  }
   .headline {
     &__left {
       font-size: 18px;
@@ -702,21 +717,7 @@
       margin-bottom: 10px;
     }
   }
-  .title {
-    span {
-      font-size: 90px;
-      transform: translateX(-30px);
-    }
-    h3 {
-      top: -30px;
-      left: 55%;
-      font-size: 55px;
-      &::after {
-        left: 0;
-        width: 50px;
-      }
-    }
-  }
+
   .subtitle {
     padding-right: 20px;
     &__text {
