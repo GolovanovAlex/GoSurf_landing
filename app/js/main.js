@@ -34,6 +34,19 @@ $(function () {
           slidesToShow: 3,
         },
       },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+        },
+      },
     ],
   });
   $('.surf-slider-map').slick({
@@ -43,6 +56,24 @@ $(function () {
     slidesToScroll: 8,
     arrows: false,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   // ---- ---- travel-slider ---- ---- //
