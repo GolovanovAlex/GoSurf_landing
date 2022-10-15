@@ -32,22 +32,38 @@
   width: 40px;
   z-index: 20;
   cursor: pointer;
-  transition: all 0.5s ease;
-
-  &__line {
-    background-color: $color_accent;
-    height: 5px;
-    margin-bottom: 5px;
-  }
+  transition: all 2.5s ease;
   &__box {
     position: relative;
   }
+  &__line {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $color_accent;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+  }
+  .menu-btn__line--one {
+    top: 10px;
+  }
+  .menu-btn__line--two {
+    top: 20px;
+  }
+  .menu-btn__line--three {
+    top: 30px;
+  }
   &.active {
     .menu-btn__line--one {
+      top: 20px;
+      transform: rotate(45deg);
     }
     .menu-btn__line--two {
+      transform: scale(0.01);
     }
     .menu-btn__line--three {
+      top: 20px;
       transform: rotate(-45deg);
     }
   }

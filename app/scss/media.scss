@@ -113,16 +113,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $color_bgdark;
+    background-color: rgba($color: #0f1010, $alpha: 0.97);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     z-index: 19;
-    padding: 15px 0 0 0;
+    padding: 17px 0 0 0;
     transform: translateX(-110%);
-    transition: all 1s ease;
+    transition: all 0.7s ease;
     &__item-link {
       padding: 0px 10px;
     }
     &.active {
-      transition: all 1s ease-in;
+      transition: all 0.7s ease-in;
       transform: translateX(0%);
     }
   }
@@ -189,6 +192,122 @@
     }
     &__name {
       font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-dots {
+    max-width: 600px;
+  }
+  .dots-box {
+    width: 110px;
+    &__number {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &__name {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .slider-dots {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .menu {
+    display: flex;
+    width: auto;
+    bottom: auto;
+  }
+  .header {
+    &__aside {
+      display: block;
+      text-align: center;
+      padding-right: 0;
+    }
+    &__date {
+      font-size: 50px;
+      line-height: 40px;
+      padding: 10px;
+    }
+    &__location {
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .menu-btn {
+    top: 70px;
+    right: 24px;
+  }
+  .header {
+    &__title {
+      display: none;
+    }
+  }
+  .header-slider {
+    &__info {
+      right: 20px;
+    }
+    &__info-title {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+  .headline {
+    &__left {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .slick-arrow {
+    right: 10px;
+    &__left {
+      right: 50px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-btn {
+    top: 70px;
+    right: 24px;
+  }
+  .header {
+    &__title {
+      display: none;
+    }
+  }
+  .header-slider {
+    &__info {
+    }
+    &__info-title {
+      font-size: 44px;
+      line-height: 44px;
+      margin-bottom: 10px;
+    }
+    &__info-suptext {
+      margin-bottom: 5px;
+    }
+    &__info-text {
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  .headline {
+    &__left {
+      font-size: 18px;
+      line-height: 10px;
+      padding: 0 0 0 53px;
+      &::before {
+        left: 0;
+        width: 40px;
+      }
     }
   }
 }
