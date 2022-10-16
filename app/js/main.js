@@ -151,4 +151,7 @@ $(function () {
   $('.menu-btn').on('click', function () {
     $('.menu, .menu-btn').toggleClass('active');
   });
+
+  // ---- ---- wow.js ---- ---- //
+  new WOW().init();
 });

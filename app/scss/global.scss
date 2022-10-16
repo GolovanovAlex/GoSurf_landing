@@ -13,6 +13,8 @@ body {
   text-transform: uppercase;
   background-color: $color_dark;
   color: $color_light;
+  min-width: 300px;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1920px;
@@ -20,7 +22,7 @@ body {
 }
 // ---- ---- title ---- ---- //
 .title {
-  span {
+  div {
     display: inline-block;
     position: relative;
     font-size: 200px;
@@ -28,6 +30,9 @@ body {
     line-height: 100px;
     color: rgba(#ffffff, 0.02);
     transform: translateX(-50px);
+  }
+  span {
+    display: inline-block;
   }
   h3 {
     position: absolute;
