@@ -649,8 +649,7 @@
       order: 0;
     }
     &__info {
-      margin-top: 30px;
-      margin-left: 15px;
+      margin: 30px 15px 0;
       max-width: 100%;
       order: 1;
     }
@@ -667,6 +666,9 @@
     }
     &__extra-name {
       font-size: 14px;
+    }
+    &__btn {
+      margin: 0 auto;
     }
   }
   .product {
@@ -917,9 +919,8 @@
   }
   .sleep {
     padding-bottom: 50px;
-
     background-size: 40%;
-    background-position: right 75%;
+    background-position: right 85%;
     .holder-slider__descr {
       margin: 0 0 0 20px;
       .descr {
