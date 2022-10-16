@@ -285,7 +285,8 @@
     display: none;
     justify-content: center;
     align-items: center;
-    span {
+
+    span + span {
       padding: 15px 50px 15px 16px;
     }
   }
@@ -340,7 +341,7 @@
     height: 23px;
     background: $color_accent;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px rgba(74, 246, 205, 0.537777);
+    box-shadow: 0px 0px 20px rgba(255, 178, 64, 0.544186);
     cursor: pointer;
   }
   &__content {
@@ -549,7 +550,7 @@
     justify-content: center;
     align-items: center;
 
-    span {
+    span + span {
       padding: 15px 50px 15px 16px;
     }
   }
@@ -755,6 +756,5 @@
     opacity: 0.5;
   }
 }
-
 // ---- ---- media ---- ---- //
 @import 'media.scss';

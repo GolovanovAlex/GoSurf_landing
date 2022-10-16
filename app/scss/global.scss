@@ -121,12 +121,16 @@ body {
   font-size: 42px;
   font-weight: 800;
   line-height: 36px;
-  padding-left: 5px;
   span {
+    transition: all 0.4s ease-in;
+    padding: 15px 15px 15px 16px;
+    display: inline-block;
+  }
+  span + span {
     display: inline-block;
     position: relative;
     background-color: $color_accent;
-    margin-left: 8px;
+    margin-left: -9px;
     &::before {
       content: '';
       position: absolute;
@@ -150,9 +154,11 @@ body {
     }
   }
   &:hover {
-    background-color: $color_accent;
     span {
-      background-color: $color_dark;
+      background-color: $color_accent;
+    }
+    span + span {
+      background-color: transparent;
     }
   }
 }
