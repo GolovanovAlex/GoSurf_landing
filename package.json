@@ -19,5 +19,8 @@
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.0",
     "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "wow.js": "^1.2.2"
   }
 }

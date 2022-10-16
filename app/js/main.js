@@ -133,11 +133,13 @@ $(function () {
 
   // ---- ---- input summ ---- ---- //
   $('.quantity-button').on('click', function () {
-    let nights = $('.nights').val() * $('.summ').data('nights');
-    let guests = ($('.guests').val() - 1) * $('.summ').data('guests');
+    let slider = $(this).parents('.holder-slider__info');
+    let nights = $('.nights', slider).val() * $('.summ', slider).data('nights');
+    let guests =
+      ($('.guests', slider).val() - 1) * $('.summ', slider).data('guests');
     let summ = nights + guests;
 
-    $('.summ').html(summ);
+    $('.summ', slider).html(summ);
   });
 
   // ---- ---- click shop ---- ---- //

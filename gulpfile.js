@@ -60,6 +60,7 @@ function build() {
       'app/fonts/**/*',
       'app/js/main.min.js',
       'app/js/jquery.min.js',
+      'app/js/wow.min.js',
       'app/js/slick.min.js',
       'app/*html',
     ],
