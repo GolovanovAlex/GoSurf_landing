@@ -277,6 +277,7 @@
     line-height: 22px;
     letter-spacing: 8px;
     transform: rotate(-90deg);
+    white-space: nowrap;
     span {
       font-weight: 300;
     }
@@ -314,7 +315,7 @@
 .surf-slider-map {
   max-width: 1200px;
   min-height: 635px;
-  background-image: url(../images/bg/bg_map.png);
+  background-image: url(../images/bg/bg_map.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -557,7 +558,7 @@
 }
 // ---- ---- travel section ---- ---- //
 .travel {
-  background-image: url(../images/bg/bg_travel.png);
+  background-image: url(../images/bg/bg_travel.webp);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -577,7 +578,7 @@
 }
 // ---- ---- shop section ---- ---- //
 .shop {
-  background-image: url(../images/bg/bg_shop.png);
+  background-image: url(../images/bg/bg_shop.webp);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right bottom;
