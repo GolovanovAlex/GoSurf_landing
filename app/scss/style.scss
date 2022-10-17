@@ -1,5 +1,6 @@
 // ---- ---- reset ---- ---- //
 @import 'slick.scss';
+@import 'animate.scss';
 @import 'normalize.scss';
 @import 'myreset.scss';
 @import 'global.scss';
@@ -326,7 +327,7 @@
   .slick-current {
     .surf-slider-dots__content {
       display: block;
-      z-index: 10px;
+      z-index: 10;
     }
   }
 }
