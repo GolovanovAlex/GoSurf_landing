@@ -19,7 +19,7 @@ $(function () {
 
   // ---- ---- surf-slider ---- ---- //
   $('.surf-slider').slick({
-    asNavFor: '.surf_subtitle-slider, surf-slider-map',
+    asNavFor: '.surf_subtitle-slider, .surf-slider-map',
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
