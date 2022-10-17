@@ -19,7 +19,7 @@ $(function () {
 
   // ---- ---- surf-slider ---- ---- //
   $('.surf-slider').slick({
-    asNavFor: '.surf-slider-map',
+    asNavFor: '.surf_subtitle-slider, surf-slider-map',
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
@@ -51,7 +51,7 @@ $(function () {
   });
   $('.surf-slider-map').slick({
     infinite: false,
-    asNavFor: '.surf-slider',
+    asNavFor: '.surf-slider, .surf_subtitle-slider',
     slidesToShow: 8,
     slidesToScroll: 8,
     arrows: false,
@@ -74,6 +74,13 @@ $(function () {
         },
       },
     ],
+  });
+  $('.surf_subtitle-slider').slick({
+    asNavFor: '.surf-slider, .surf-slider-map',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
   });
 
   // ---- ---- travel-slider ---- ---- //
@@ -155,3 +162,17 @@ $(function () {
   // ---- ---- wow.js ---- ---- //
   new WOW().init();
 });
+// ---- ---- scroll  ---- ---- //
+const anchors = document.querySelectorAll('a[href*="#"]');
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute('href').substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}
