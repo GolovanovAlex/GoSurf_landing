@@ -693,6 +693,9 @@
     right: 24px;
   }
   .header {
+    &__slider-item--four {
+      background-position-x: 12%;
+    }
     &__title {
       display: none;
     }
@@ -755,7 +758,6 @@
 @media (max-width: 450px) {
   .header__map {
     top: 15px;
-    right: -40px;
   }
   .subtitle {
     &__text {
