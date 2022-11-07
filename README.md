@@ -17,18 +17,19 @@
 
 ## Info
 
-![Gifweb](readme/gifweb.gif)
+![Gifweb](readme/gifweb.webp)
 
 Создано на основе ролика с YouTube канала [От 0 до 1](https://www.youtube.com/c/%D0%9E%D1%820%D0%B4%D0%BE1)
 
 Верстка полноценного сайта-лендинга. Работа с **HTML**, **CSS** и **JS**.  
-Использование препроцессинга **SASS**, библиотеки **JQuery**, слайдера **Slick** и сборщика **Gulp**.  
-Пройдена валидация HTML и CSS, а так же производительность с помощью **PageSpeed Insights**.  
-Респонсивный дизайн адаптирует сайт под любой экран устройства. До 320px.
+Использование препроцессинга **SASS**, библиотеки **JQuery**, библиотеки **Animate**, слайдера **Slick** и сборщика **Gulp**.  
+Пройдена валидация HTML и CSS, а так же производительность с помощью **PageSpeed Insights**.
 
 ---
 
-![GifMobile](readme/gifmobile.gif)
+Респонсивный дизайн адаптирует сайт под любой экран устройства.
+
+![GifMobile](readme/gifmobile.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![GifMobile](readme/giftab.webp)
 
 ---
 
